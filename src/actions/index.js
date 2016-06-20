@@ -1,2 +1,2 @@
 export { auth } from './auth';
-export { setTracks } from './track';
+export { setTracks, playTrack } from './track';
