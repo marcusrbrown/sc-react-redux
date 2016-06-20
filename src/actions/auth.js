@@ -21,6 +21,7 @@ function fetchStream(me, session) {
 
 export function auth() {
   return function (dispatch) {
+    /* eslint-disable no-undef */
     SC.initialize({ client_id: CLIENT_ID, redirect_uri: REDIRECT_URI });
 
     SC.connect().then((session) => {
@@ -31,5 +32,6 @@ export function auth() {
           dispatch(fetchStream(me, session));
         });
     });
+    /* eslint-enable no-undef */
   };
 }

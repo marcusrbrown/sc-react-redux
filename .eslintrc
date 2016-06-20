@@ -23,6 +23,7 @@
         "semi": ["error", "always"],
         "comma-dangle": 0,
         "no-console": 0,
-        "max-len": ["error", 120]
+        "max-len": ["error", 120, 2, {"ignoreComments": true}],
+        "func-names": 0
     }
 }
