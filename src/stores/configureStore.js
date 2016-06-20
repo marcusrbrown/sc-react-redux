@@ -9,5 +9,15 @@ const createStoreWithMiddleware = compose(
 )(createStore);
 
 export default function configureStore(initialState) {
-  return createStoreWithMiddleware(reducer, initialState);
+  const store = createStoreWithMiddleware(reducer, initialState);
+
+  if (module.hot) {
+    // Enable hot module replacement for reducers.
+    module.hot.accept('../reducers/', () => {
+      const nextReducer = require('../reducers/'); // eslint-disable-line global-require
+      store.replaceReducer(nextReducer);
+    });
+  }
+
+  return store;
 }
