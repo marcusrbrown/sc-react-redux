@@ -1,10 +1,14 @@
 import React, { PropTypes } from 'react';
 
-function Stream({ tracks = [], onAuth }) {
+function Stream({ user, tracks = [], onAuth }) {
   return (
     <div>
       <div>
-        <button onClick={onAuth} type="button">Login</button>
+        {
+          user ?
+            <div>{user.username}</div> :
+            <button onClick={onAuth} type="button">Login</button>
+        }
       </div>
       <br />
       <div>
@@ -19,6 +23,7 @@ function Stream({ tracks = [], onAuth }) {
 }
 
 Stream.propTypes = {
+  user: PropTypes.object,
   tracks: PropTypes.array,
   onAuth: PropTypes.func.isRequired
 };
