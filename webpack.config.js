@@ -1,3 +1,4 @@
+const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
@@ -7,24 +8,30 @@ module.exports = {
     './src/index.js'
   ],
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loader: 'react-hot!babel'
+        use: [
+          'react-hot-loader',
+          'babel-loader'
+        ]
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'eslint-loader'
+        loader: 'eslint-loader',
+        options: {
+          configFile: path.join(__dirname, '.eslintrc')
+        }
       }
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['.js', '.jsx']
   },
   output: {
-    path: __dirname + '/dist',
+    path: path.join(__dirname, 'dist'),
     publicPath: '/',
     filename: 'bundle.js'
   },
@@ -33,12 +40,9 @@ module.exports = {
     hot: true,
     historyApiFallback: true
   },
-  eslint: {
-    configFile: './.eslintrc'
-  },
   plugins: [
     new webpack.ProvidePlugin({
-      fetch: 'imports?this=>global!exports?global.fetch!whatwg-fetch'
+      fetch: 'imports-loader?this=>global!exports-loader?global.fetch!whatwg-fetch'
     })
   ],
   devtool: 'source-map'
