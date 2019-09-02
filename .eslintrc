@@ -24,6 +24,7 @@
         "comma-dangle": 0,
         "no-console": 0,
         "max-len": ["error", 120, 2, {"ignoreComments": true}],
-        "func-names": 0
+        "func-names": 0,
+        "react/jsx-filename-extension": [1, {"extensions": [".js", ".jsx"]}]
     }
 }
