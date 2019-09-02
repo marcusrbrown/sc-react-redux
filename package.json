@@ -37,6 +37,7 @@
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
+    "prop-types": "^15.7.2",
     "react": "^15.6.2",
     "react-dom": "^15.6.2",
     "react-redux": "^4.4.10",

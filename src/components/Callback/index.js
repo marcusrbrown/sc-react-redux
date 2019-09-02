@@ -2,6 +2,7 @@ import React from 'react';
 
 class Callback extends React.Component {
   componentDidMount() {
+    // eslint-disable-next-line no-restricted-globals
     window.setTimeout(opener.SC.connectCallback, 1);
   }
 
