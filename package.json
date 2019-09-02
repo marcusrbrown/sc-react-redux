@@ -37,16 +37,16 @@
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
-    "react": "^15.1.0",
-    "react-dom": "^15.1.0",
-    "react-redux": "^4.4.5",
-    "react-router": "^2.4.1",
-    "react-router-redux": "^4.0.5",
-    "redux": "^3.5.2",
-    "redux-logger": "^2.6.1",
-    "redux-thunk": "^2.1.0",
-    "soundcloud": "^3.1.2",
-    "whatwg-fetch": "^1.0.0"
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "react-redux": "^4.4.10",
+    "react-router": "^2.8.1",
+    "react-router-redux": "^4.0.8",
+    "redux": "^3.7.2",
+    "redux-logger": "^2.10.2",
+    "redux-thunk": "^2.3.0",
+    "soundcloud": "^3.3.2",
+    "whatwg-fetch": "^1.1.1"
   },
   "babel": {
     "presets": [
