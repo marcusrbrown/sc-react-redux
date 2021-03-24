@@ -1,5 +1,12 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+
   "extends": [
-    "config:base"
-  ]
+    "config:base",
+    ":preserveSemverRanges"
+  ],
+
+  "semanticCommits": "enabled",
+
+  "rebaseWhen": "behind-base-branch",
 }
