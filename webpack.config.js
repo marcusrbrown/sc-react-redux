@@ -16,14 +16,6 @@ module.exports = {
           'react-hot-loader',
           'babel-loader'
         ]
-      },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'eslint-loader',
-        options: {
-          configFile: path.join(__dirname, '.eslintrc')
-        }
       }
     ]
   },
