@@ -7,7 +7,7 @@ function setMe(state, action) {
   return { ...state, user };
 }
 
-export default function (state = initialState, action) {
+export default function (state = initialState, action = { type: '' }) {
   switch (action.type) {
     case actionTypes.ME_SET:
       return setMe(state, action);

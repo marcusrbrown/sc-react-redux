@@ -15,7 +15,7 @@ function setPlay(state, action) {
   return { ...state, activeTrack: track };
 }
 
-export default function (state = initialState, action) {
+export default function (state = initialState, action = { type: '' }) {
   switch (action.type) {
     case actionTypes.TRACKS_SET:
       return setTracks(state, action);
