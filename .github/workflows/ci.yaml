@@ -25,7 +25,7 @@ jobs:
         node-version: ${{ env.NODE_VERSION }}
         cache: npm
       env:
-        NODE_VERSION: 18.x # renovate: datasource=npm depName=node versioning=node
+        NODE_VERSION: 18.12.1 # renovate: datasource=npm depName=node versioning=node
     - run: npm ci --ignore-scripts
     - run: npm run build --if-present
     - run: npm run lint --if-present
