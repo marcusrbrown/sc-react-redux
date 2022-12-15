@@ -17,13 +17,13 @@ export default function configureStore(initialState) {
   const store = createStoreWithMiddleware(reducer, initialState);
 
   // TODO - use import.meta.url
-//  if (module.hot) {
-//    // Enable hot module replacement for reducers.
-//    module.hot.accept('../reducers', () => {
-//      const nextReducer = require('../reducers'); // eslint-disable-line global-require
-//      store.replaceReducer(nextReducer);
-//    });
-//  }
+  //  if (module.hot) {
+  //    // Enable hot module replacement for reducers.
+  //    module.hot.accept('../reducers', () => {
+  //      const nextReducer = require('../reducers'); // eslint-disable-line global-require
+  //      store.replaceReducer(nextReducer);
+  //    });
+  //  }
 
   return store;
 }
