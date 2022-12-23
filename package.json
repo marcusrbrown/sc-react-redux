@@ -41,7 +41,7 @@
     "react": "15.7.0",
     "react-dom": "15.7.0",
     "react-redux": "8.0.5",
-    "react-router": "6.6.0",
+    "react-router": "6.6.1",
     "react-router-redux": "4.0.8",
     "redux": "4.2.0",
     "redux-logger": "3.0.6",
