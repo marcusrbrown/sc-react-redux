@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --progress --colors --hot --config ./webpack.config.js",
     "test": "mocha --require @babel/register --require ./test/setup.mjs 'src/**/*.spec.js'",
     "test:watch": "npm run test -- --watch",
-    "lint": "eslint src/**/*.js test/**/*.js"
+    "lint": "eslint src/**/*.js test/setup.mjs"
   },
   "keywords": [],
   "author": "",
