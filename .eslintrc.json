@@ -24,5 +24,20 @@
     "max-len": ["error", 120, 2, {"ignoreComments": true}],
     "func-names": 0,
     "react/jsx-filename-extension": [1, {"extensions": [".js", ".jsx"]}]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["**/*.spec.js"],
+      "env": {
+        "mocha": true
+      },
+      "globals": {
+        "expect": "readonly"
+      },
+      "rules": {
+        "react/jsx-props-no-spreading": "off",
+        "react/react-in-jsx-scope": "off"
+      }
+    }
+  ]
 }
