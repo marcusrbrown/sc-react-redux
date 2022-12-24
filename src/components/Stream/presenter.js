@@ -34,8 +34,8 @@ class Stream extends Component {
         <br />
         <div>
           {
-            tracks.map((track) => (
-              <div className="track" key={track.origin.id}>
+            tracks.map((track, index) => (
+              <div className="track" key={track.origin.id || index}>
                 {track.origin.title}
                 <button type="button" onClick={() => onPlay(track)}>Play</button>
               </div>
