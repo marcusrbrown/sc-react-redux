@@ -1,4 +1,4 @@
-import { shallow } from 'enzyme';
+import { render } from '@testing-library/react';
 import Stream from './presenter';
 
 describe('Stream', () => {
@@ -9,8 +9,8 @@ describe('Stream', () => {
   };
 
   it('shows two elements', () => {
-    const element = shallow(<Stream {...props} />);
+    const { container } = render(<Stream {...props} />);
 
-    expect(element.find('.track')).to.have.length(2);
+    expect(container.querySelectorAll('.track')).to.have.length(2);
   });
 });
