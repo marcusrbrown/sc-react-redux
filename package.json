@@ -14,10 +14,10 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "7.22.5",
-    "@babel/eslint-parser": "7.21.8",
+    "@babel/eslint-parser": "7.22.5",
     "@babel/preset-env": "7.22.5",
     "@babel/preset-react": "7.22.5",
-    "@babel/register": "7.21.0",
+    "@babel/register": "7.22.5",
     "@testing-library/react": "14.0.0",
     "babel-loader": "9.1.2",
     "chai": "4.3.7",
