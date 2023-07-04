@@ -13,9 +13,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "7.22.5",
-    "@babel/eslint-parser": "7.22.5",
-    "@babel/preset-env": "7.22.5",
+    "@babel/core": "7.22.6",
+    "@babel/eslint-parser": "7.22.6",
+    "@babel/preset-env": "7.22.6",
     "@babel/preset-react": "7.22.5",
     "@babel/register": "7.22.5",
     "@testing-library/react": "14.0.0",
