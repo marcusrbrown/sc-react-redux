@@ -28,7 +28,7 @@
     "eslint-plugin-react": "7.33.2",
     "exports-loader": "4.0.0",
     "imports-loader": "4.0.1",
-    "jsdom": "23.0.1",
+    "jsdom": "23.1.0",
     "mocha": "10.2.0",
     "react-addons-test-utils": "15.6.2",
     "react-hot-loader": "4.13.1",
