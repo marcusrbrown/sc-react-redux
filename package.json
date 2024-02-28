@@ -27,7 +27,7 @@
     "eslint-plugin-jsx-a11y": "6.8.0",
     "eslint-plugin-react": "7.33.2",
     "exports-loader": "4.0.0",
-    "imports-loader": "4.0.1",
+    "imports-loader": "5.0.0",
     "jsdom": "23.2.0",
     "mocha": "10.2.0",
     "react-addons-test-utils": "15.6.2",
